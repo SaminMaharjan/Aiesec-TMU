@@ -1,0 +1,91 @@
+/* Counter.css */
+.counter-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 3rem 0;
+    background-color: #fff; /* Ensures clean white background */
+  }
+  
+  .counter-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+  
+  .counter-item {
+    padding: 1.5rem 2rem;
+    min-width: 200px;
+    position: relative;
+  }
+  
+  /* Subtle decorative underline */
+  .counter-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #001f7e;
+    opacity: 0.3;
+  }
+  
+  /* Number styling */
+  .counter-number {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #001f7e;
+    display: block;
+    margin-bottom: 0.8rem; /* Increased spacing */
+    font-family: 'Tahoma', sans-serif;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Label styling - guaranteed visibility */
+  .counter-label {
+    font-size: 1.1rem;
+    color: #333 !important; /* Forced dark color */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    opacity: 1 !important; /* Force full visibility */
+    position: relative;
+    z-index: 1; /* Ensures text stays above other elements */
+  }
+  
+  /* Hover effects */
+  .counter-item:hover .counter-number {
+    transform: scale(1.05);
+  }
+  
+  .counter-item:hover::after {
+    opacity: 0.7;
+    width: 80px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .counter-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    
+    .counter-item {
+      width: 100%;
+      max-width: 250px;
+      padding: 1.5rem 1rem;
+    }
+    
+    .counter-number {
+      font-size: 2.2rem;
+    }
+    
+    .counter-label {
+      font-size: 1rem;
+    }
+  }

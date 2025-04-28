@@ -1,0 +1,138 @@
+.exchange-options {
+    /* padding: 3rem 1rem; */
+    background: #ffffffe0; 
+    font-family: 'Tahoma', sans-serif;
+  
+  }
+  
+  .exchange-options .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .exchange-options h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .bento-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bento-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .color-bar {
+    height: 6px;
+    width: 100%;
+    background-color: var(--accent-color);
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .card-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  .details {
+    text-align: left;
+    align-items: centre;
+    justify-content: space-between; /* Push left and right sections apart */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+  }
+  
+  .detail-row {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .detail-row span:first-child {
+    text-align: right;
+    min-width: 40%;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .cost {
+    color: var(--accent-color);
+    font-weight: bold;
+  }
+  
+  .includes h4 {
+    font-size: 1rem;
+    color: #555;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .includes ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    color: #666;
+  }
+  
+  .includes li {
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background: #001f7e; /* AIESEC blue */
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #0030a0;
+  }
+
+
+  
+  @media (max-width: 768px) {
+    .bento-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .exchange-options h2 {
+      font-size: 1.8rem;
+    }
+  }

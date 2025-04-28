@@ -1,0 +1,132 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px 20px;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  transform: translateY(-100%);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.footer-center {
+    display: flex;
+    align-items: center;
+
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.social-links a:hover {
+  color: #037ef3;
+  background: transparent;
+  transform: translateY(-3px);
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.newsletter-form input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  min-width: 200px;
+}
+
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffffff62;
+}
+
+.designer {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.designer a {
+  color: #ffffff62;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+    max-width: 300px;
+  }
+} 

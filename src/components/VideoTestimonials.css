@@ -1,0 +1,114 @@
+.video-testimonials {
+    /* padding: 3rem 1rem; */
+    background: #f8f9fa;
+    text-align: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .video-testimonials h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .reels-container-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .reels-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .reels-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .reel-wrapper {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: 300px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .instagram-media {
+    background: #FFF;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 500px;
+  }
+  
+  .loading-reel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    color: #999;
+  }
+  
+  .scroll-button {
+    background: #001f7e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+  
+  .scroll-button:hover {
+    background: #0030a0;
+    transform: scale(1.1);
+  }
+  
+  .scroll-button.left {
+    left: 10px;
+  }
+  
+  .scroll-button.right {
+    right: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .reel-wrapper {
+      width: 280px;
+      min-width: 280px;
+    }
+    
+    .scroll-button {
+      width: 30px;
+      height: 30px;
+      font-size: 1rem;
+    }
+    
+    .instagram-media,
+    .loading-reel {
+      min-height: 400px;
+    }
+  }

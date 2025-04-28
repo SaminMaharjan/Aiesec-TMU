@@ -28,6 +28,91 @@
   color: #61dafb;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000; /* AIESEC blue */
+  padding: 10px;
+  transition: top 0.3s ease-in-out; /* Smooth transition for slide effect */
+  z-index: 1000; /* Ensure navbar stays above other content */
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;                    /* Remove the default margin */
+  padding: 0;                   /* Remove the default padding */
+  list-style: none; 
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar.hide {
+  top: -80px; /* Hide navbar by moving it above the viewport */
+}
+
+.navbar.show {
+  top: 0; /* Show navbar */
+}
+.navbar-logo img {
+  height: 40px; /* Adjust as needed */
+  margin-right: 20px;
+}
+
+
+section {
+  margin-bottom: 20px;
+}
+
+
+#our-reach {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.counter {
+  background-color: #001f7e;  /* AIESEC blue */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.counter h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.counter p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Make the App container take full height */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Push the footer to the bottom */
+footer {
+  margin-top: auto;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
