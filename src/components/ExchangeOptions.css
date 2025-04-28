@@ -87,7 +87,7 @@
   }
   
   .cost {
-    color: var(--accent-color);
+    /* color: var(--accent-color); */
     font-weight: bold;
   }
   

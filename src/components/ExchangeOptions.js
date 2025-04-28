@@ -9,7 +9,7 @@ const optionsData = [
     cost: '$770 CAD',
     duration: '9-78 weeks',
     includes: ['Salary', 'Pre-Departure Preparation Seminar', 'AIESEC Experience Manager Support'],
-    // color: '#FF6B35' // Orange
+    color: '#FF6B35' // Orange
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const optionsData = [
     cost: '$620 CAD',
     duration: '4-6 weeks',
     includes: ['Food Included (depending on project)', 'Accommodation with Host Provided', 'Pre-Departure Preparation Seminar', 'AIESEC Experience Manager Support'],
-    // color: '#EF476F' // Red
+    color: '#EF476F' // Red
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const optionsData = [
     cost: '$670-770 CAD',
     duration: '6-78 weeks',
     includes: ['Salary', 'Pre-Departure Preparation Seminar', 'AIESEC Experience Manager Support'],
-    // color: '#118AB2' // Blue
+    color: '#118AB2' // Blue
   }
 ];
 
